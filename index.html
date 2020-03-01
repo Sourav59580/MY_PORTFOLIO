@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fruktur|Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#" style="font-family: 'Russo One','Fruktur';"><span
+                style="color: #F2784B; font-size:12px;" class="fa fa-circle mr-1"></span>Sourav</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#home">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#myservice">MY SERVICE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#myportfolio">MY PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#timeline">TIMELINE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testmonials">TESTIMONIALS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Home navbr div coding-->
+    <div id="home" class="container-fluid d-flex justify-content-center align-items-center p-0">
+        <div style="background-color: rgba(0,0,0,0.4);"
+            class="w-100 h-100 d-flex justify-content-center align-items-center flex-column">
+            <h1 class="text-light font-weight-bold mb-3">MY NAME IS SOURAV</h1>
+            <h4 class="text-light mb-4">A PROFFESIONAL <span class="text-warning changeproffesion"></span></h4>
+            <span class="d-none"> </span>
+            <div>
+                <button class="btn mr-4 btn-md btn-warning"><span class="mr-2 fa fa-rocket"></span>HIRE ME</button>
+                <button class="btn btn-md"><span class="mr-2 fa fa-briefcase"></span>MY PROJECT</button>
+            </div>
+
+        </div>
+    </div>
+    <div id="yservice" class="container-fluid">
+        
+
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            var string = "WEB DEVELOPER";
+            var i = 0;
+            if (i < string.length) {
+                setInterval(function () {
+                    document.querySelector(".changeproffesion").innerHTML += string.charAt(i);
+                    i++;
+                }, 40);
+            }
+        });
+         //2nd
+         $(document).ready(function(){
+            setTimeout(function () {
+                
+                var string = "UI/UX DESIGNER";
+                var i = 0;
+                document.querySelector(".changeproffesion").innerHTML="";
+                if (i < string.length) {
+                    setInterval(function () {
+                        document.querySelector(".changeproffesion").innerHTML += string.charAt(
+                            i);
+                        i++;
+                    }, 40);
+                }
+
+            },2000);
+        });
+        //3rd
+        $(document).ready(function(){
+            setTimeout(function () {
+                
+                var string = "CREATIVE DIRECTOR";
+                var i = 0;
+                document.querySelector(".changeproffesion").innerHTML="";
+                if (i < string.length) {
+                    setInterval(function () {
+                        document.querySelector(".changeproffesion").innerHTML += string.charAt(
+                            i);
+                        i++;
+                    }, 40);
+                }
+
+            },4000);
+        });
+        
+       
+    </script>
+</body>
+
+</html>
