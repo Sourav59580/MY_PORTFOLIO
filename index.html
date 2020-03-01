@@ -13,6 +13,19 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <style>
+        h5{
+            font-family: 'Fruktur';  
+        }
+        hr {
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+        }
+    </style>
 
 </head>
 
@@ -56,17 +69,68 @@
         <div style="background-color: rgba(0,0,0,0.4);"
             class="w-100 h-100 d-flex justify-content-center align-items-center flex-column">
             <h1 class="text-light font-weight-bold mb-3" id="name">MY NAME IS SOURAV</h1>
-            <h4 class="text-light mb-4" id="proffesional">A PROFFESIONAL <span class="text-warning changeproffesion"></span></h4>
+            <h4 class="text-light mb-4" id="proffesional">A PROFFESIONAL <span
+                    class="text-warning changeproffesion"></span></h4>
             <span class="d-none"> </span>
             <div>
                 <button class="btn mr-4 btn-md btn-warning"><span class="mr-2 fa fa-rocket"></span>HIRE ME</button>
-                <a href="https://github.com/Sourav59580" class="btn btn-md btn-light"><span class="mr-2 fa fa-briefcase"></span>MY PROJECT</a>
+                <a href="https://github.com/Sourav59580" class="btn btn-md btn-light"><span
+                        class="mr-2 fa fa-briefcase"></span>MY PROJECT</a>
             </div>
 
         </div>
     </div>
-    <div id="yservice" class="container-fluid">
-        
+    <!--Service page coding-->
+    <div id="myservice" class="container-fluid text-center w-100 p-3 bg-white">
+        <h2 class="mb-4" style="font-family: 'Russo One','Fruktur';">MY SERVICE</h2>
+        <hr>
+        <div style="left:48%;width:40px; height:40px; border-radius:50%;background-color: salmon;position: absolute;margin-top:-35px;"
+            class="d-flex justify-content-center align-items-center text-light"><i class="fa fa-rocket"></i></div>
+        <p class="text-center my-4 text-justify">ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin<br class="d-md-block d-none"> literature from 45 BC, making it over 2000 years old<p>
+        <div class="row mb-4 p-4">
+            <div class="col-md-3 mb-3" style="height:250px;">
+             <div class="w-100 h-100 service-box p-3 " style="box-shadow:0px 0px 4px 2px #ccc;">
+                 <i class="fa fa-html5 mb-1" style="font-size:48px;"></i>
+                 <h5>Web Design</h5>
+                 <p class="text-justify">There are many variations of passages of Lorem Ipsum available, 
+                     but the majority have suffered alteration in some</p>
+                 
+             </div>
+            </div>
+            <div class="col-md-3 mb-3" style="height:250px;">
+                <div class="w-100 h-100  service-box p-3" style="box-shadow:0px 0px 4px 2px #ccc;">
+                    <i class="fa fa-code mb-1" style="font-size:48px;"></i>
+                 <h5>Web Development</h5>
+                 <p class="text-justify">There are many variations of passages of Lorem Ipsum available, 
+                     but the majority have suffered alteration in some</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3" style="height:250px;">
+                <div class="w-100 h-100 service-box p-3" style="box-shadow:0px 0px 4px 2px #ccc;">
+                    <i class="fa fa-mobile mb-1" style="font-size:48px;"></i>
+                 <h5>Responsive Design</h5>
+                 <p class="text-justify">There are many variations of passages of Lorem Ipsum available, 
+                     but the majority have suffered alteration in some</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-2" style="height:250px;">
+                <div class="w-100 h-100 service-box p-3" style="box-shadow:0px 0px 4px 2px #ccc;">
+                    <i class="fa fa-edit mb-1" style="font-size:48px;"></i>
+                 <h5>Customize Website</h5>
+                 <p class="text-justify">There are many variations of passages of Lorem Ipsum available, 
+                     but the majority have suffered alteration in some</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Portfolio page coding-->
+    <div class="container-fluid text-center w-100 p-3 bg-light" id="myportfolio">
+        <h2 class="mb-4" style="font-family: 'Russo One','Fruktur';">MY PORTFOLIO</h2>
+        <hr>
+        <div style="left:48%;width:40px; height:40px; border-radius:50%;background-color: salmon;position: absolute;margin-top:-35px;"
+            class="d-flex justify-content-center align-items-center text-light"><i class="fa fa-briefcase"></i></div>
+            <p class="text-center my-4 text-justify">ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin<br class="d-md-block d-none"> literature from 45 BC, making it over 2000 years old<p></p>
+
 
     </div>
 
@@ -82,13 +146,13 @@
                 }, 40);
             }
         });
-         //2nd
-         $(document).ready(function(){
+        //2nd
+        $(document).ready(function () {
             setTimeout(function () {
-                
+
                 var string = "UI/UX DESIGNER";
                 var i = 0;
-                document.querySelector(".changeproffesion").innerHTML="";
+                document.querySelector(".changeproffesion").innerHTML = "";
                 if (i < string.length) {
                     setInterval(function () {
                         document.querySelector(".changeproffesion").innerHTML += string.charAt(
@@ -97,15 +161,15 @@
                     }, 40);
                 }
 
-            },2000);
+            }, 2000);
         });
         //3rd
-        $(document).ready(function(){
+        $(document).ready(function () {
             setTimeout(function () {
-                
+
                 var string = "CREATIVE DIRECTOR";
                 var i = 0;
-                document.querySelector(".changeproffesion").innerHTML="";
+                document.querySelector(".changeproffesion").innerHTML = "";
                 if (i < string.length) {
                     setInterval(function () {
                         document.querySelector(".changeproffesion").innerHTML += string.charAt(
@@ -114,10 +178,8 @@
                     }, 40);
                 }
 
-            },4000);
+            }, 4000);
         });
-        
-       
     </script>
 </body>
 
