@@ -15,6 +15,7 @@
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/wow.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
     <style>
         h5 {
             font-family: 'Fruktur';
@@ -155,7 +156,47 @@
     </div>
 
     <!--Work and Education-->
-    <div></div>
+    <div class="container-fluid text-center my-4" id="timeline">
+        <h2 class="mb-4" style="font-family: 'Russo One','Fruktur';">WORK & EDUCATION</h2>
+        <hr>
+        <div style="left:48%;width:40px; height:40px; border-radius:50%;background-color: salmon;position: absolute;margin-top:-35px;"
+            class="d-flex justify-content-center align-items-center text-light"><i class="fa fa-history"></i></div>
+        <p class="text-center my-4 text-justify">ontrary to popular belief, Lorem Ipsum is not simply random text. It
+            has roots in a piece of classical Latin<br class="d-md-block d-none"> literature from 45 BC, making it over
+            2000 years old</p>
+        <div class="row" style="height:500px;">
+            <div class="col-1"></div>
+            <div class="col-4" style="overflow: hidden;">
+                <div class="w-100 right-arrow bg-warning rounded wow slideInLeft" style="height:110px;margin-top:5%;">
+                    <h5>SECONDARY</h5>
+                    <p>Lorem Ipsum is not simply random text. It
+                        has roots in a piece of classical Latin</p>
+                </div>
+                <div class="w-100 right-arrow bg-warning rounded wow slideInLeft" data-wow-delay="0.8s" style="height:110px;margin-top:48%;box-shadow:0px 0px 3px 1px #ccc;">
+                    <h5>GRADUATIONS</h5>
+                    <p>Lorem Ipsum is not simply random text. It
+                        has roots in a piece of classical Latin</p>
+                </div>
+            </div>
+            <div class="col-2">
+                <div style="border-left: 6px solid salmon;height: 450px;margin-left:50%;"></div>
+                <div class="rounded text-light d-flex justify-content-center align-items-center p-1 wow fadeIn slow"  style="width:60px;position:absolute;top:10%;left:37%;background-color: #F2784B;">2016</div>
+                <div class="rounded text-light d-flex justify-content-center align-items-center p-1 wow fadeIn slow" data-wow-delay="0.4s" style="width:60px;position:absolute;top:40%;left:37%;background-color: #F2784B;">2018</div>
+                <div class="rounded text-light d-flex justify-content-center align-items-center p-1 wow fadeIn slow" data-wow-delay="0.8s" style="width:60px;position:absolute;top:70%;left:37%;background-color: #F2784B;">2022</div>
+            </div>
+            <div class="col-4" style="overflow: hidden;">
+                <div class="w-100 p-2 error bg-warning rounded wow slideInRight" style="height:110px;margin-top:40%;" data-wow-delay="0.4s">
+                <h5>HIGHER SECONDARY</h5>
+                <p>Lorem Ipsum is not simply random text. It
+                    has roots in a piece of classical Latin</p>
+                </div>
+            </div>
+            <div class="col-1"></div>
+
+        </div>
+
+
+    </div>
 
     <!--contact page coding-->
     <div class="container-fluid text-center w-100 p-3 bg-white" id="contact">
@@ -195,7 +236,7 @@
                         <div class="d-flex justify-content-center align-items-center c-icon"><i
                                 class="fa fa-linkedin"></i></div>
                     </div>
-                    <div class="col-10 "><span class="email float-left ml-2">linkedin.com/in/sourav-santra-a68905199</span></div>
+                    <div class="col-10 "><span class="email float-left ml-2"><a href="https://www.linkedin.com/in/sourav-santra-a68905199/" class="text-dark">linkedin.com/in/sourav-santra-a68905199</a></span></div>
                     <div class="col-1"></div>
                 </div>
                 <!--3rd-->
@@ -204,7 +245,7 @@
                         <div class="d-flex justify-content-center align-items-center c-icon"><i
                                 class="fa fa-github"></i></div>
                     </div>
-                    <div class="col-6"><span class="ml-2 email">https://github.com/Sourav59580</span></div>
+                    <div class="col-6"><span class="ml-2 email"><a href="https://github.com/Sourav59580" class="text-dark">https://github.com/Sourav59580</a></span></div>
                     <div class="col-5"></div>
                 </div>
                 <!--3rd-->
@@ -222,11 +263,21 @@
         </div>
         
     </div>
+    
 <!--footer-->
 <div class="container-fluid bg-dark p-3 text-light">
     <span class="fa fa-copyright"></span><span> Copyright 2020 Sourav Santra.</span>
 </div>
+<div class="container-fluid mt-4" style="height:400px;">
+    <div class="arrow_box mb-4" style="width:200px; height:50px; background-color: #F2784B;">
+        <div class="bottom-arrow"></div>
+    </div>
+    <div class="bottom-arrow"></div>
 
+    <div class="error">This is field required</div>
+
+    
+</div>
 
 
     <script>
