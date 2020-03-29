@@ -14,13 +14,53 @@ body{
 }
 
 /* project */
-.project-img{
-    position: absolute;
-}
-.project-description{
+.project-box{
     position: relative;
-    background-color: rgba(0,0,0,.7);
+    overflow: hidden;
+}
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.6);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+  
+  .project-box:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+
+.project-description{
+    position: absolute;
+    background-color: rgba(0,0,0,.6);
     color: white;
+}
+
+.search{
+    background-color: white;
+    color: coral;
+    cursor: pointer;
+}
+.search:hover{
+    background-color: coral;
+    color: white;
+    transition:1s;
+    
+}
+.link{
+    background-color:coral;
+    color: white;
+    cursor: pointer;
+}
+.link:hover{
+    background-color: white;
+    color:coral;
+    transition:1s;
 }
 
 /* Extra small devices (phones, 600px and down) */
