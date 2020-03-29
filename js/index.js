@@ -42,3 +42,18 @@ $(document).ready(function () {
 
     }, 4000);
 });
+
+//portfolio 
+$(document).ready(function(){
+    $(".portfolio-btn").each(function(){
+        $(this).click(function(){
+            var state = $(this).attr('state');
+            $(".all").each(function(){
+                $(this).hide();
+                $("."+state).each(function(){
+                    $(this).show(300);
+                });
+            });
+        })
+    })
+})
